@@ -1,0 +1,62 @@
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS_Email_Alerts.exe.config
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS_Email_Alerts.exe.manifest
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS_Email_Alerts.application
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS_Email_Alerts.exe
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS_Email_Alerts.pdb
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS.BusinessLogic.dll
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS.Common.dll
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\CrystalDecisions.Shared.dll
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\Microsoft.Practices.Unity.dll
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS.BusinessLogic.pdb
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS.Common.pdb
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.csprojResolveAssemblyReference.cache
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.EmailUtility.resources
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.Properties.Resources.resources
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.csproj.GenerateResource.Cache
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.exe.manifest
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.application
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.exe
+D:\files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.pdb
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS_Email_Alerts.exe.config
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS_Email_Alerts.exe.manifest
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS_Email_Alerts.application
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS_Email_Alerts.exe
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS_Email_Alerts.pdb
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS.BusinessLogic.dll
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS.Common.dll
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\CrystalDecisions.Shared.dll
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS.BusinessLogic.pdb
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS.Common.pdb
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.csprojResolveAssemblyReference.cache
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.EmailUtility.resources
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.Properties.Resources.resources
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.csproj.GenerateResource.Cache
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.exe.manifest
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.application
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.exe
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.pdb
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.csprojResolveAssemblyReference.cache
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.EmailUtility.resources
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.Properties.Resources.resources
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.csproj.GenerateResource.Cache
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS_Email_Alerts.exe.config
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS_Email_Alerts.exe
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS_Email_Alerts.pdb
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS.BusinessLogic.dll
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS.Common.dll
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\CrystalDecisions.Shared.dll
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\Microsoft.Practices.Unity.dll
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS.BusinessLogic.pdb
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\bin\Debug\BRIMS.Common.pdb
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.exe
+D:\From Elijah\Email Alerts Source\BRIMS_Email_Alerts\obj\Debug\BRIMS_Email_Alerts.pdb

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BRIMSEmailAlertsBusinessLogicDataStoreContainer" CdmEntityContainer="BRIMSEntities">
+    <FunctionImportMapping FunctionImportName="proc_GetSystem_MailAlerts" FunctionName="BRIMS.EmailAlerts.BusinessLogic.Data.Store.proc_GetSystem_MailAlerts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BRIMS.EmailAlerts.BusinessLogic.Data.tSystem">
+          <ScalarProperty Name="ReportPath" ColumnName="ReportPath" />
+          <ScalarProperty Name="OurBranchID" ColumnName="OurBranchID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="proc_UpdateUTTrxEmailSent" FunctionName="BRIMS.EmailAlerts.BusinessLogic.Data.Store.proc_UpdateUTTrxEmailSent" />
+    <FunctionImportMapping FunctionImportName="proc_brokerexposuremailalerts" FunctionName="BRIMS.EmailAlerts.BusinessLogic.Data.Store.Proc_BrokerExposureMailAlerts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BRIMS.EmailAlerts.BusinessLogic.Data.BrokerExposureMailAlert">
+          <ScalarProperty Name="ColumnID" ColumnName="ColumnID" />
+          <ScalarProperty Name="BrokerName" ColumnName="BrokerName" />
+          <ScalarProperty Name="TransactionAmount" ColumnName="TransactionAmount" />
+          <ScalarProperty Name="Commission" ColumnName="Commission" />
+          <ScalarProperty Name="BrokerAmount" ColumnName="BrokerAmount" />
+          <ScalarProperty Name="ActualPercentage" ColumnName="ActualPercentage" />
+          <ScalarProperty Name="LowerLimit" ColumnName="LowerLimit" />
+          <ScalarProperty Name="LowerLimitVariancepercentage" ColumnName="LowerLimitVariancepercentage" />
+          <ScalarProperty Name="Limit" ColumnName="Limit" />
+          <ScalarProperty Name="VariancePercentage" ColumnName="VariancePercentage" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_MailAlerts" FunctionName="BRIMS.EmailAlerts.BusinessLogic.Data.Store.Proc_MailAlerts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BRIMS.EmailAlerts.BusinessLogic.Data.RBAMailAlert">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+          <ScalarProperty Name="SecurityName" ColumnName="SecurityName" />
+          <ScalarProperty Name="FundPercentage" ColumnName="FundPercentage" />
+          <ScalarProperty Name="MinLimit" ColumnName="MinLimit" />
+          <ScalarProperty Name="MaxLimit" ColumnName="MaxLimit" />
+          <ScalarProperty Name="MinLimitVariance" ColumnName="MinLimitVariance" />
+          <ScalarProperty Name="MaxLimitVariance" ColumnName="MaxLimitVariance" />
+          <ScalarProperty Name="RBALimit" ColumnName="RBALimit" />
+          <ScalarProperty Name="RBALimitVariance" ColumnName="RBALimitVariance" />
+          <ScalarProperty Name="HVLimit" ColumnName="HVLimit" />
+          <ScalarProperty Name="HVVariance" ColumnName="HVVariance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_UpdateSentEmailAlert" FunctionName="BRIMS.EmailAlerts.BusinessLogic.Data.Store.sp_UpdateSentEmailAlert" />
+    <FunctionImportMapping FunctionImportName="sp_GetEmailRecipient" FunctionName="BRIMS.EmailAlerts.BusinessLogic.Data.Store.sp_GetEmailRecipient">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BRIMS.EmailAlerts.BusinessLogic.Data.BRIMSMail">
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="proc_bankexposuremailalerts" FunctionName="BRIMS.EmailAlerts.BusinessLogic.Data.Store.Proc_BankExposureMailAlerts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BRIMS.EmailAlerts.BusinessLogic.Data.BankExposureMailAlert">
+          <ScalarProperty Name="ColumnID" ColumnName="ColumnID" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="LimitType" ColumnName="LimitType" />
+          <ScalarProperty Name="Limit" ColumnName="Limit" />
+          <ScalarProperty Name="DepositsHeld" ColumnName="DepositsHeld" />
+          <ScalarProperty Name="Variance" ColumnName="Variance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="proc_UTTrxEmailAlerts" FunctionName="BRIMS.EmailAlerts.BusinessLogic.Data.Store.proc_UTTrxEmailAlerts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BRIMS.EmailAlerts.BusinessLogic.Data.TransactionEmailAlert">
+          <ScalarProperty Name="UTCFirstName" ColumnName="UTCFirstName" />
+          <ScalarProperty Name="TrxType" ColumnName="TrxType" />
+          <ScalarProperty Name="UTCLastName" ColumnName="UTCLastName" />
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="TranID" ColumnName="TranID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="UTCEmail" ColumnName="UTCEmail" />
+          <ScalarProperty Name="UTCMobile" ColumnName="UTCMobile" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="proc_UmbrellaAlerts" FunctionName="BRIMS.EmailAlerts.BusinessLogic.Data.Store.proc_UmbrellaAlerts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BRIMS.EmailAlerts.BusinessLogic.Data.UmbrellaEmailAlert">
+          <ScalarProperty Name="TransDesc" ColumnName="TransDesc" />
+          <ScalarProperty Name="SubTypeID" ColumnName="SubTypeID" />
+          <ScalarProperty Name="ClientEmail" ColumnName="ClientEmail" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="TransID" ColumnName="TransID" />
+          <ScalarProperty Name="IsMailSent" ColumnName="IsMailSent" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BRIMS.EmailAlerts.BusinessLogic.Data" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="BRIMSEntities" annotation:LazyLoadingEnabled="false">
+    <FunctionImport Name="Proc_MailAlerts" ReturnType="Collection(BRIMS.EmailAlerts.BusinessLogic.Data.RBAMailAlert)">
+      <Parameter Name="OurBranchID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proc_bankexposuremailalerts" ReturnType="Collection(BRIMS.EmailAlerts.BusinessLogic.Data.BankExposureMailAlert)">
+      <Parameter Name="OurBranchID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proc_brokerexposuremailalerts" ReturnType="Collection(BRIMS.EmailAlerts.BusinessLogic.Data.BrokerExposureMailAlert)">
+      <Parameter Name="OurBranchID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_GetEmailRecipient" ReturnType="Collection(BRIMS.EmailAlerts.BusinessLogic.Data.BRIMSMail)" />
+    <FunctionImport Name="sp_UpdateSentEmailAlert">
+      <Parameter Name="ID" Mode="In" Type="Int64" />
+      <Parameter Name="Item" Mode="In" Type="String" />
+      <Parameter Name="OurBranchID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proc_GetSystem_MailAlerts" ReturnType="Collection(BRIMS.EmailAlerts.BusinessLogic.Data.tSystem)">
+      <Parameter Name="OurBranchID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proc_UpdateUTTrxEmailSent">
+      <Parameter Name="TranIDS" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proc_UTTrxEmailAlerts" ReturnType="Collection(BRIMS.EmailAlerts.BusinessLogic.Data.TransactionEmailAlert)">
+      <Parameter Name="OurBranchID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="rpt_BrokerExposureAlerts">
+      <Parameter Name="OurBranchID" Mode="In" Type="String" />
+      <Parameter Name="FromDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ToDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="proc_UmbrellaAlerts" ReturnType="Collection(BRIMS.EmailAlerts.BusinessLogic.Data.UmbrellaEmailAlert)">
+      <Parameter Name="OurBranchID" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="RBAMailAlert">
+    <Property Type="Int64" Name="ID" Nullable="false" />
+    <Property Type="String" Name="ClientID" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="ClientName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="SecurityName" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="FundPercentage" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="MinLimit" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="MaxLimit" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="MinLimitVariance" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="MaxLimitVariance" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="RBALimit" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="RBALimitVariance" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="HVLimit" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="HVVariance" Nullable="false" Precision="19" Scale="4" />
+  </ComplexType>
+  <ComplexType Name="BrokerExposureMailAlert">
+    <Property Type="Int32" Name="ColumnID" Nullable="false" />
+    <Property Type="String" Name="BrokerName" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="TransactionAmount" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Commission" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="BrokerAmount" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ActualPercentage" Nullable="false" Precision="19" Scale="2" />
+    <Property Type="Decimal" Name="LowerLimit" Nullable="false" Precision="19" Scale="2" />
+    <Property Type="Decimal" Name="LowerLimitVariancepercentage" Nullable="false" Precision="19" Scale="2" />
+    <Property Type="Decimal" Name="Limit" Nullable="false" Precision="19" Scale="2" />
+    <Property Type="Decimal" Name="VariancePercentage" Nullable="false" Precision="19" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="BRIMSMail">
+    <Property Type="String" Name="EmailID" Nullable="true" MaxLength="150" />
+  </ComplexType>
+  <ComplexType Name="tSystem">
+    <Property Type="String" Name="ReportPath" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="OurBranchID" Nullable="false" MaxLength="4" />
+  </ComplexType>
+  <ComplexType Name="BankExposureMailAlert">
+    <Property Type="Int32" Name="ColumnID" Nullable="false" />
+    <Property Type="String" Name="BankName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="LimitType" Nullable="false" MaxLength="10" />
+    <Property Type="Decimal" Name="Limit" Nullable="false" Precision="19" Scale="2" />
+    <Property Type="Decimal" Name="DepositsHeld" Nullable="false" Precision="19" Scale="2" />
+    <Property Type="Decimal" Name="Variance" Nullable="false" Precision="19" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="TransactionEmailAlert">
+    <Property Type="String" Name="UTCFirstName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="TrxType" Nullable="false" MaxLength="6" />
+    <Property Type="String" Name="UTCLastName" Nullable="false" MaxLength="250" />
+    <Property Type="String" Name="ClientID" Nullable="false" MaxLength="15" />
+    <Property Type="Decimal" Name="TranID" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="AccountID" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="UTCEmail" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="UTCMobile" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="UmbrellaEmailAlert">
+    <Property Type="String" Name="TransDesc" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="SubTypeID" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="ClientEmail" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="PhoneNumber" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="TransID" Nullable="true" />
+    <Property Type="Boolean" Name="IsMailSent" Nullable="true" />
+    <Property Type="DateTime" Name="Date" Nullable="true" />
+  </ComplexType>
+</Schema>

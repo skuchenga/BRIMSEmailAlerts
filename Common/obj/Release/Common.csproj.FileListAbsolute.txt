@@ -1,0 +1,4 @@
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\Common\bin\Release\BRIMS.Common.dll
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\Common\bin\Release\BRIMS.Common.pdb
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\Common\obj\Release\BRIMS.Common.dll
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\Common\obj\Release\BRIMS.Common.pdb

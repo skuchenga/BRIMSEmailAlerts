@@ -1,0 +1,7 @@
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\obj\Release\BRIMS_Email_Alerts.csprojResolveAssemblyReference.cache
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\obj\Release\BRIMS_Email_Alerts.EmailUtility.resources
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\obj\Release\BRIMS_Email_Alerts.Properties.Resources.resources
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\obj\Release\BRIMS_Email_Alerts.csproj.GenerateResource.Cache
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\obj\Release\BRIMS_Email_Alerts.exe.manifest
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\obj\Release\BRIMS_Email_Alerts.exe
+D:\Elijah\Projects\BRIMS Files\Email Alerts Source\BRIMS_Email_Alerts\obj\Release\BRIMS_Email_Alerts.pdb

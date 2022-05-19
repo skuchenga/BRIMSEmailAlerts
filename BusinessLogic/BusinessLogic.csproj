@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{459356B3-FACD-463F-B0EC-23A6AFD50706}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BRIMS.EmailAlerts.BusinessLogic</RootNamespace>
+    <AssemblyName>BRIMS.BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\timothy.macheru\Desktop\BRIMS_Email_Alerts\Dependencies\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\timothy.macheru\Desktop\BRIMS_Email_Alerts\Dependencies\CrystalDecisions.Shared.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\Dependencies\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\Dependencies\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\Dependencies\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\Dependencies\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\Dependencies\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alerts\BankExposureAlerts\BankExposureMailAlert.cs" />
+    <Compile Include="Alerts\BankExposureAlerts\BankExposureService.cs" />
+    <Compile Include="Alerts\BankExposureAlerts\BankExposureTask.cs" />
+    <Compile Include="Alerts\BankExposureAlerts\IBankExposureService.cs" />
+    <Compile Include="Alerts\BrokerExposureAlerts\BrokerExposureMailAlert.cs" />
+    <Compile Include="Alerts\BrokerExposureAlerts\BrokerExposureService.cs" />
+    <Compile Include="Alerts\BrokerExposureAlerts\BrokerExposureTask.cs" />
+    <Compile Include="Alerts\BrokerExposureAlerts\IBrokerExposureService.cs" />
+    <Compile Include="Alerts\RBALimitAlerts\IRBALimitService.cs" />
+    <Compile Include="Alerts\RBALimitAlerts\RBALimitTask.cs" />
+    <Compile Include="Alerts\RBALimitAlerts\RBAMailAlert.cs" />
+    <Compile Include="Alerts\RBALimitAlerts\RBAMailAlertService.cs" />
+    <Compile Include="Alerts\TransactionEmailAlerts\ITransactionEmailService.cs" />
+    <Compile Include="Alerts\TransactionEmailAlerts\TransactionEmailAlert.cs" />
+    <Compile Include="Alerts\TransactionEmailAlerts\TransactionEmailAlertService.cs" />
+    <Compile Include="Alerts\TransactionEmailAlerts\TransactionEmailAlertTask.cs" />
+    <Compile Include="Alerts\UmbrellaAlerts\UmbrellaEmailTask.cs" />
+    <Compile Include="Alerts\UmbrellaAlerts\UmbrellaEmailService.cs" />
+    <Compile Include="Alerts\UmbrellaAlerts\UmbrellaEmailAlert.cs" />
+    <Compile Include="Alerts\UmbrellaAlerts\IUmbrellaEmailService.cs" />
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="Configuration\Config.cs" />
+    <Compile Include="Data\BRIMSObjectContext.Functions.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BRIMSObjectContext.Functions.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BRIMSObjectContext.ObjectSets.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BRIMSObjectContext.ObjectSets.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Extensions.cs" />
+    <Compile Include="Email\IMailService.cs" />
+    <Compile Include="Email\BRIMSMail.cs" />
+    <Compile Include="Email\MailService.cs" />
+    <Compile Include="Infrastructure\DependencyResolverFactory.cs" />
+    <Compile Include="Infrastructure\IDependencyResolver.cs" />
+    <Compile Include="Infrastructure\IDependencyResolverFactory.cs" />
+    <Compile Include="Infrastructure\IoC.cs" />
+    <Compile Include="Infrastructure\UnityDependencyResolver.cs" />
+    <Compile Include="Infrastructure\UnityPerExecutionContextLifetimeManager.cs" />
+    <Compile Include="Infrastructure\UnityServiceLocator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\ISystemService.cs" />
+    <Compile Include="System\tSystem.cs" />
+    <Compile Include="System\SystemService.cs" />
+    <Compile Include="Tasks\ITask.cs" />
+    <Compile Include="Tasks\Task.cs" />
+    <Compile Include="Tasks\TaskManager.cs" />
+    <Compile Include="Tasks\TaskThread.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Data\BRIMSModel.edmx" />
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\BRIMSObjectContext.Functions.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BRIMSObjectContext.Functions.cs</LastGenOutput>
+    </None>
+    <None Include="Data\BRIMSObjectContext.ObjectSets.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BRIMSObjectContext.ObjectSets.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{BF5D70A2-E012-4F70-94BD-18958160F338}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
